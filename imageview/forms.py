@@ -5,7 +5,7 @@ from .models import Image
 class ImageForm(ModelForm):
     class Meta:
         model = Image
-        fields = ('image_file', 'tags')
+        fields = ('title', 'description', 'image_file', 'tags')
         labels = {
                      'image_file': 'Select an Image',
                  },
