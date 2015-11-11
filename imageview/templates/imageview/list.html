@@ -6,7 +6,7 @@
         </small>
     </h1>
     {% for image in object_list %}
-        <div class="col-md-2">
+        <div class="img-container col-md-2">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <a href="{{ image.image_file.url }}" data-toggle="lightbox" data-title="{{ image.title }}"
