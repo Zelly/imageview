@@ -14,8 +14,8 @@ class Image(models.Model):
                                format='PNG',
                                options={'quality': 60})
     tags = TaggableManager()
-    title = models.CharField(max_length=100, unique=True, null=False)
-    description = models.TextField(null=True)
+    title = models.CharField(max_length=100, unique=False, default="")
+    description = models.TextField(default="")
     md5sum = models.CharField(max_length=36, unique=True)
 
     def clean(self):
